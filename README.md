@@ -2,11 +2,11 @@
 
 ## CSS Framework
 
-- [] Bootstrap 5
+- [ ] Bootstrap 5
 - [x] Materialize
-- [] Bulma
-- [] Foundation
-- [] Tailwind CSS
+- [ ] Bulma
+- [ ] Foundation
+- [ ] Tailwind CSS
 
 ## Project setup
 ```
