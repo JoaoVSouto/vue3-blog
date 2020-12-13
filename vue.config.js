@@ -5,7 +5,7 @@ module.exports = {
     config.plugin('html').tap((args) => {
       const [firstArgs] = args;
 
-      firstArgs.title = "Prison Mike's Blog";
+      firstArgs.title = "Prison Eloi's Blog";
 
       return args;
     });
