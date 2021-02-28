@@ -42,6 +42,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import { Dropdown } from 'materialize-css';
 
 export default defineComponent({
   name: 'Navbar',
@@ -49,7 +50,7 @@ export default defineComponent({
   },
   mounted() {
     const elems = document.querySelectorAll('.dropdown-trigger');
-    window.M.Dropdown.init(elems, {});
+    Dropdown.init(elems, {});
   },
 });
 </script>
