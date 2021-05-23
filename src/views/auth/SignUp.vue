@@ -24,7 +24,7 @@
             <span class="helper-text">{{ passwordError }}</span>
           </div>
         </div>
-        <div class="row">
+        <div class="row last-row">
           <div class="input-field col s12">
             <input
               id="confirm_password"
@@ -71,7 +71,7 @@ export default defineComponent({
         .min(6, 'Password has to have a minimum of 6 characters'),
       password_confirmation: Yup.string().oneOf(
         [Yup.ref('password'), null],
-        'Passwords must match'
+        'Passwords must match',
       ),
     });
 
@@ -84,7 +84,7 @@ export default defineComponent({
     const { value: name, errorMessage: nameError } = useField('name');
     const { value: email, errorMessage: emailError } = useField('email');
     const { value: password, errorMessage: passwordError } = useField(
-      'password'
+      'password',
     );
     const {
       value: passwordConfirmation,
@@ -112,7 +112,7 @@ export default defineComponent({
               password,
               password_confirmation: passwordConfirmation,
             }),
-          }
+          },
         );
         const { data } = await response.json();
 
@@ -147,7 +147,7 @@ export default defineComponent({
     color: #f44336;
   }
 
-  /* .row:last-child {
-    background-color: #f0f;
-  } */
+  .last-row {
+    margin-bottom: 0;
+  }
 </style>
