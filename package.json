@@ -10,8 +10,11 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "materialize-css": "^1.0.0-rc.2",
+    "vee-validate": "^4.4.0-alpha.2",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0"
+    "vue-router": "^4.0.0-0",
+    "vue-toastification": "^2.0.0-rc.1",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "@types/materialize-css": "^1.0.8",
